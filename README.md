@@ -1,11 +1,8 @@
 # OrganizadorVJ
 ## Descripción del problema
-Somos un grupo de amigos que queremos reunirnos de forma regular para jugar videojuegos, sin embargo tenemos los siguientes problemas a la hora de organizarnos:
-
--No sabemos cuando podriamos reunirnos debido a las diferencias en nuestros horarios.
-
--Al no saber que juegos tiene cada miembro del grupo solemos tener problemas para saber a que podemos jugar
-
+Me han diagnosticado diabetes y ahora debo de empezar a ponerme insulina varias veces a lo largo del día.
+El medico me ha informado de que la cantidad de insulina depende de cada persona y que para saber cuanta debo ponerme debería de calcular un ratio de insulina por hidrato de carbono.
+El problema es que me resulta dificil analizar mis valores de glucosa y usarlos para calcular un ratio adecuado para mi.
 ## Documentación
 [Documentación](./Documentacion)
 
