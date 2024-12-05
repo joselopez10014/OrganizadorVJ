@@ -5,4 +5,5 @@ El problema es que normalmente me interesa ver de forma clara como han ido varia
 Me gustaria que hubiese alguna forma mas clara de ver la información de todas las lonjas. 
 ## Documentación
 [Documentación](./Documentacion)
-
+[Historias de usario](./Documentacion/Historias.md)
+[Milestones](./Documentacion/Milestones.md)
