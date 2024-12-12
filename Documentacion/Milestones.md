@@ -1,6 +1,6 @@
 # Milestones
 # M0
-Creación de un sistema inicial basado en la HU1 en el que se pueda almacenar la información que sera extraida de la página para poder usarla mas adelante.
+Creación de una estructura inicial basada en la HU1 en la que se pueda almacenar la información que sera extraida de la página para poder usarla mas adelante.
 Para que se considere viable el producto debera de representar la base del problema y poder almacenar la información.
 # M1
 Extracción y almacenamiento de la información de la página usando la estructura creada en el milestone 0.
