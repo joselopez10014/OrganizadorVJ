@@ -1,6 +1,6 @@
 # Milestones
 # M0 Estructura del problema
-Definir la estructura necesaria basandonos en la HU1. Se entragara un código que represente esta estructura de forma adecuada.
+Definir la estructura necesaria basándonos en la HU1. Se entragará un código que represente esta estructura de forma adecuada.
 Para que se considere viable el producto deberá representar todos los elementos que conforman el problema.
 # M1 Extracción y almacenamiento
 Extracción y almacenamiento de la información de la página usando la estructura creada en el milestone 0.
