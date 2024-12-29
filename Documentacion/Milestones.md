@@ -1,10 +1,10 @@
 # Milestones
-# M0
-Creación de una estructura inicial basada en la HU1 en la que se pueda almacenar la información que sera extraida de la página para poder usarla mas adelante.
-Para que se considere viable el producto debera de tener la capacidad de guardar toda la información necesaria para los proximos objetivos, siendo esta información la lonja en la que la compran, el tipo de almendra, el precio del producto y la fecha en la que ese precio es aplicable.
-# M1
+# M0 Estructura del problema
+Definir la estructura necesaria basandonos en la HU1. Se entragara un código que represente esta estructura de forma adecuada.
+Para que se considere viable el producto deberá representar todos los elementos que conforman el problema.
+# M1 Extracción y almacenamiento
 Extracción y almacenamiento de la información de la página usando la estructura creada en el milestone 0.
-Se considera un producto minimamente viable cuando la información almacenada sea usable para el proximo milestone.
-# M2
-Creacion de una interfaz que muestre la información extraida y la muestre de forma clara para facilitar la comparación entre distintos datos.
+Se considera un producto mínimamente viable cuando la información almacenada sea usable para el próximo milestone.
+# M2 Interfaz para la aplicación
+Creación de una interfaz que muestre la información extraída de forma clara para facilitar la comparación entre distintos datos.
 Se considera un producto viable cuando la información se pueda visualizar de forma clara.
