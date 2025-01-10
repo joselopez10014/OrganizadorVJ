@@ -1,2 +1,5 @@
 lenguaje: python
 entidad: precios_almendra/lonja.py
+automatizar:
+    fichero: Makefile
+    orden: make
