@@ -9,7 +9,7 @@ class Almendra:
     #Función para agregar un nuevo precio a la almendra, necesita un precio que es un número positivo y una fecha en formato 'AAAA-MM-DD'.No se admiten dos precios con la misma fecha
     def agregar_precio(self, fecha, precio):
         if not self._validar_fecha(fecha):
-            raise ValueError(f"La fecha '{fecha}' no es válida. Use el formato 'AAAA-MM-DD'.")
+            raise ValueError(f"La fecha '{fecha}' no es válida. Use el formato 'DD-MM-AAAA'.")
         if precio <= 0:
             raise ValueError("El precio debe ser un número positivo.")
         if fecha in self.precios:
@@ -28,7 +28,7 @@ class Almendra:
     @staticmethod
     def _validar_fecha(fecha):
         try:
-            datetime.strptime(fecha, "%Y-%m-%d")
+            datetime.strptime(fecha, "%d/%m/%y")
             return True
         except ValueError:
             return False
