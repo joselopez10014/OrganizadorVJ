@@ -5,7 +5,6 @@ from unittest.mock import patch, Mock
 
 
 def test_extraer_datos():
-    # Simula una respuesta de requests.get
     html_prueba = """
     <div class="supsystic-tables-wrap">
         <table>
@@ -36,15 +35,11 @@ def test_extraer_datos():
         mock_response.content = html_prueba
         mock_get.return_value = mock_response
 
-        # Instancia de la clase que contiene extraer_datos
         lonjafalsa = Lonja("prueba")
 
-        # Llama a la función que deseas probar
         lonjafalsa.extraer_datos("http://example.com")
 
-    # Verifica que los datos fueron procesados correctamente
     almendra_a = lonjafalsa.obtener_almendra("Tipo A")
     almendra_b = lonjafalsa.obtener_almendra("Tipo B")
 
-    # Verifica los precios y las fechas procesadas
     assert(almendra_a.precios == {"01/01/23": 10.5} and almendra_b.precios == {"01/01/23": 20.7, "02/01/23": 30.2})

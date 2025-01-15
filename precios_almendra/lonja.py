@@ -39,7 +39,7 @@ class Lonja:
         tipos_almendra=[]
         almendras={}
         
-        for th in headers[1:]: #Se tiene que saltar la fecha
+        for th in headers[1:]:
             tipo= th.get_text(strip=True)
             tipos_almendra.append(tipo)
             almendras[tipo]=Almendra(tipo)
