@@ -3,13 +3,11 @@ import requests
 from datetime import datetime
 from bs4 import BeautifulSoup as b
 
-#Clase Lonja que indica el nombre del punto de venta y guarda todos los tipos del almendra que se pueden vender aqui
 class Lonja:
     def __init__(self, nombre):
         self.nombre = nombre
         self.almendras = []
     
-    #Función que añade un nuevo tipo de almendra a la lonja. Necesita que se le pasa un atributo de la clase Almendra que no este ya en la lista
     def agregar_almendra(self, almendra):
         if not isinstance(almendra, Almendra):
             raise ValueError("Solo se pueden agregar objetos de tipo Almendra.")
@@ -17,10 +15,9 @@ class Lonja:
             raise ValueError(f"La almendra '{almendra.tipo}' ya está en la lonja.")
         self.almendras.append(almendra)
 
-    #Función que muestra todos los tipos de almendra que hay en la lonja
     def listar_almendras(self):
         return [almendra.tipo for almendra in self.almendras]
-    #Función para extraer un tipo de almendra
+    
     def obtener_almendra(self, tipo):
         resultado=None
         for almendra in self.almendras:
@@ -28,7 +25,6 @@ class Lonja:
                 resultado=almendra
         return resultado
     
-    #Funcion para extraer informacion de la página de la lonja
     def extraer_datos(self,url):
         html=requests.get(url)
         contenido=html.content
@@ -39,7 +35,7 @@ class Lonja:
         tipos_almendra=[]
         almendras={}
         
-        for th in headers[1:]:
+        for th in headers[1:]: 
             tipo= th.get_text(strip=True)
             tipos_almendra.append(tipo)
             almendras[tipo]=Almendra(tipo)
