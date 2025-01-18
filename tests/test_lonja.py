@@ -1,6 +1,5 @@
-from precios_almendra.lonja import Lonja
-from bs4 import BeautifulSoup as b
-from precios_almendra.almendra import Almendra
+from lonja import Lonja
+from almendra import Almendra
 from unittest.mock import patch, Mock
 
 
@@ -43,3 +42,15 @@ def test_extraer_datos():
     almendra_b = lonjafalsa.obtener_almendra("Tipo B")
 
     assert(almendra_a.precios == {"01/01/23": 10.5} and almendra_b.precios == {"01/01/23": 20.7, "02/01/23": 30.2})
+
+def test_agregar_almendra():
+    lonja = Lonja("prueba")
+    lonja.agregar_almendra(Almendra("Tipo A"))
+    assert(lonja.almendras[0].tipo=="Tipo A")
+
+def test_obtener_almendra():
+    lonja = Lonja("prueba")
+    almendra=Almendra("Tipo A")
+    lonja.agregar_almendra(almendra)
+    lonja.agregar_almendra(Almendra("Tipo b"))
+    assert(almendra==lonja.obtener_almendra("Tipo A"))
