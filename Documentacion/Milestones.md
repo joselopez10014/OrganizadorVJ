@@ -1,9 +1,5 @@
 # Milestones
-# M0 Estructura del problema
-Definir la estructura necesaria basándonos en la HU1. Se entragará un código que represente esta estructura de forma adecuada.
-Para que se considere viable el producto deberá representar todos los elementos que conforman el problema.
-# M1 Extracción y almacenamiento
-Se debe de extraer la información relevante de la página web para que se puedan comparar los precios de los diferentes tipos de almendra. El producto debe de ser capaz de identificar y obtener los datos relevantes, de manera que se puedan almacenar y utilizar en el futuro. Para que el producto sea viable, debe de mostrar que se ha identificado la información necesaria y como sera almacenada.
-# M2 Interfaz para la aplicación
-Creación de una interfaz que muestre la información extraída de forma clara para facilitar la comparación entre distintos datos.
-Se considera un producto viable cuando la información se pueda visualizar de forma clara.
+# M0 Modelo inicial del problema
+Analizar el problema de la HU1 para entender que elementos y relaciones son necesarias para representar el problema. Se deberá de entregar un modelo inicial que represente el problema de forma adecuada. Se considerara viable cuando el modelo refleje correctamente los elementos del problema de la HU1 y las relaciones entre ellos.
+# M1 Obtención de la información
+Diseñar un código inicial que permita la identificación y recopilación de información relevante sobre los precios de los diferentes tipos de almendra desde una página web. Se considerara viable cuando el código sea capaz de identificar y recopilar de forma consistente los datos necesarios para comparar precios y puntos de venta.
