@@ -1,4 +1,4 @@
-from almendra import Almendra
+from precios_almendra.almendra import Almendra
 
 def test_agregar_precio():
     almendra=Almendra("prueba")

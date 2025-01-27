@@ -1,4 +1,4 @@
-from almendra import Almendra
+from precios_almendra.almendra import Almendra
 import requests
 from datetime import datetime
 from bs4 import BeautifulSoup as b

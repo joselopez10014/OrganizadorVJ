@@ -1,5 +1,5 @@
-from lonja import Lonja
-from almendra import Almendra
+from precios_almendra.lonja import Lonja
+from precios_almendra.almendra import Almendra
 from unittest.mock import patch, Mock
 
 
