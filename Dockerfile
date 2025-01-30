@@ -1,10 +1,8 @@
 FROM python:alpine
 
-RUN apk add --no-cache make bash
-
-RUN adduser -D -h /home/userTest userTest
-
-RUN mkdir -p /home/userTest/.cache && \
+RUN apk add --no-cache make && \
+    adduser -D -h /home/userTest userTest &&\
+    mkdir -p /home/userTest/.cache && \
     chmod -R a+w /home/userTest/.cache 
 
 ENV PATH="/home/userTest/.local/bin:$PATH"
@@ -15,9 +13,8 @@ WORKDIR /app/test
 
 COPY pyproject.toml /app/test
 
-RUN wget -qO- https://install.python-poetry.org | python3 -
-
-RUN poetry install --no-root
+RUN wget -qO- https://install.python-poetry.org | python3 - &&\
+    poetry install --no-root
 
 ENV PYTHONPATH=/app/test
 
