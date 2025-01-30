@@ -11,5 +11,5 @@ Las opciones que se han considerado son:
 - [ubuntu](https://hub.docker.com/_/ubuntu): Recibe actualizaciones de forma regular pero su peso es mayor que alpine y se sigue necesitando instalar python y las dependencias, lo que aumenta su peso.
 
 ## Elección
-Se han compararado las opciones mencionadas anteriormente con este [resultado](./Documentacion/comparacion.png).
+Se han compararado las opciones mencionadas anteriormente con este [resultado](./comparacion.png).
 Se ha decidido usar python alpine debido a que no tiene un peso demasiado elevado y ya trae python instalado por defecto, por lo que su peso no aumentara tanto al realizar la instalación.
