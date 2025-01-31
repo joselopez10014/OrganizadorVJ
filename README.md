@@ -7,3 +7,7 @@ Me gustaria que hubiese alguna forma mas clara de ver la información de todas l
 - [Documentación](./Documentacion)
 - [Historias de usario](./Documentacion/Historias.md)
 - [Milestones](./Documentacion/Milestones.md)
+- [Gestor de Dependencias](./Documentacion/Gestor_dependencias.md)
+- [Gestor de Tareas](./Documentacion/Gestor_tareas.md)
+## Comprobar sintaxis
+Se debe de usar esta orden: make check
