@@ -1,7 +1,8 @@
 help:
 	@echo "Comandos disponibles:"
-	@echo "  install        Instala el gestor de dependencias Poetry"
-	@echo "  check        Realiza las comprobaciones"
+	@echo "  install        		Instala el gestor de dependencias Poetry"
+	@echo "  check        			Realiza las comprobaciones"
+	@echo "  test        			Realiza los test"
 
 install:
 	@echo "Se va a instalar poetry"
@@ -15,3 +16,6 @@ check:
 		python3 $$file || { echo "Error en $$file"; exit 1; }; \
 	done
 	@echo "Todo funciona correctamente."
+
+test:
+	pytest -v

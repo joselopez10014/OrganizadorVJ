@@ -11,3 +11,5 @@ Me gustaria que hubiese alguna forma mas clara de ver la información de todas l
 - [Gestor de Tareas](./Documentacion/Gestor_tareas.md)
 ## Comprobar sintaxis
 Se debe de usar esta orden: make check
+## Test
+Para realizar los tests usar: make test
