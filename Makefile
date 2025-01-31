@@ -18,4 +18,4 @@ check:
 	@echo "Todo funciona correctamente."
 
 test:
-	pytest -v
+	poetry run pytest -v

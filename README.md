@@ -13,3 +13,9 @@ Me gustaria que hubiese alguna forma mas clara de ver la información de todas l
 Se debe de usar esta orden: make check
 ## Test
 Para realizar los tests usar: make test
+## Docker
+[Imagen elegida](./Documentacion/Imagen_docker.md)
+Para construir el contenedor de forma local se usa este comando:
+- docker build -t jose100/organizadorvj .
+Para ejecutarlo se usa este comando:
+- docker run -u 1001 -t -v `pwd`:/app/test jose100/organizadorvj
