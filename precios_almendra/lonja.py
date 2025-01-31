@@ -19,11 +19,7 @@ class Lonja:
         return [almendra.tipo for almendra in self.almendras]
     
     def obtener_almendra(self, tipo):
-        resultado=None
-        for almendra in self.almendras:
-            if tipo in almendra.tipo==tipo:
-                resultado=almendra
-        return resultado
+        return next(filter(lambda almendra: almendra.tipo == tipo, self.almendras), None)
     
     def extraer_datos(self,url):
         html=requests.get(url)
