@@ -4,5 +4,6 @@ Me dedico a recoger almendras para luego venderlas en alguna de las lonjas cerca
 El problema es que normalmente me interesa ver de forma clara como han ido variando los precios en los ultimos meses para decidir si debería de vender ya o esperar unos meses, pero eso es dificil de hacer en la página.
 Me gustaria que hubiese alguna forma mas clara de ver la información de todas las lonjas. 
 ## Documentación
-[Documentación](./Documentacion)
-
+- [Documentación](./Documentacion)
+- [Historias de usario](./Documentacion/Historias.md)
+- [Milestones](./Documentacion/Milestones.md)
